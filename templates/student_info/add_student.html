@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+
+
+
+{% block title %}
+    Add_Student Page
+{% endblock %}
+
+
+
+{% block content %}
+
+<h2>Add Add_Student</h2>
+
+<form method="POST" enctype="multipart/form-data">
+  {% csrf_token %}
+  <label for="fname">First Name</label>
+  <input type="text" id="fname" name="first_name" placeholder="Your First Name..">
+
+  <label for="lname">Last Name</label>
+  <input type="text" id="lname" name="last_name" placeholder="Your last Name..">
+
+  <label for="lname">Email</label>
+  <input type="email" id="email" name="email" placeholder="Your email">
+
+  <label for="lname">Phone Number</label>
+  <input type="tel" id="tel" name="tel" placeholder="Your Content Number">
+
+  <label for="lname">Date of Birth</label>
+  <input type="date" id="dob" name="dob">
+
+  <br>
+  <br>
+
+  <label for="lname">Gender</label>
+  <br>
+  <input type="radio" id="male" name="gender" value="male"> Male
+  <input type="radio" id="female" name="gender" value="female"> Female
+
+  <br>
+  <br>
+  <br>
+
+
+  <label for="image">Upload Your Picture</label>
+  <input type="file" id="image" name="profile_pic">
+
+  <label for="country">Country</label>
+  <select id="country" name="country">
+    <option value="australia">Australia</option>
+    <option value="canada">Canada</option>
+    <option value="usa">USA</option>
+  </select>
+
+
+  <label for="lname">Your Message</label>
+  <textarea name="message" id="" placeholder="Your Writhe See Something"></textarea>
+  
+  <input type="submit" value="Submit">
+</form>
+
+
+{% endblock %}
