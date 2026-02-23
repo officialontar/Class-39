@@ -1,23 +1,16 @@
-# Python
-__pycache__/
-*.py[cod]
-*.pyo
-*.pyd
-
-# Django
-db.sqlite3
-*.log
-local_settings.py
-
-# Virtualenv
-.venv/
+# venv
 venv/
+.venv/
 
-# Media uploads
+# python cache
+__pycache__/
+*.pyc
+
+# database
+db.sqlite3
+
+# media uploads
 media/
 
-# OS / Editor
-.DS_Store
-Thumbs.db
-.vscode/
-.idea/
+# env
+.env

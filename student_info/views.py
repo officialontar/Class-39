@@ -69,8 +69,20 @@ def edit_student(request, std_id):
         student_data.tel = request.POST.get('tel')
         student_data.dob = request.POST.get('dob')
         student_data.gender = request.POST.get('gender')
+
+        if request.FILES.get('profile_pic'):
+            if student_data.profile_pic:
+                student_data.profile_pic.delete(save=False)
+            student_data.profile_pic = request.FILES.get('profile_pic')
+
+
         student_data.country = request.POST.get('country')
         student_data.message = request.POST.get('message')
+
+        student_data.save()
+        return redirect('all_student')
+
+
 
     context = {
         'student' : student_data

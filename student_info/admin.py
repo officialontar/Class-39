@@ -17,6 +17,7 @@ class StudentAdmin(admin.ModelAdmin):
         'gender',
         'country',
         'image_preview',
+        'message',
     )
 
     search_fields = ('id', 'email', 'tel', 'gender', 'country')
