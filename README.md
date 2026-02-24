@@ -192,18 +192,18 @@ http://127.0.0.1:8000/admin/
 (Add project screenshots here)
 
 
+---
 
 ## 👨‍💻 Author
 
-**MD. ANISUJJAMAN ONTAR** 
-  ```
-## Aspiring Full Stack Developer  
+**MD. ANISUJJAMAN ONTAR**  
+Aspiring Full Stack Developer  
 
 🔗 GitHub: https://github.com/officialontar  
 
 ---
 
-## 🚀 Project Status
+## ⭐ Project Status
 
 🟢 Completed (Class-39 Final Version)
 
