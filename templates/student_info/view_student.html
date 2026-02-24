@@ -1,0 +1,33 @@
+{% extends 'base.html' %} {% load static %}
+
+<title>
+  {% block title %} Profile - {{ student.first_name }} {{ student.last_name }}
+  {% endblock %}
+</title>
+
+{% block content %}
+
+<div class="profile-container">
+  <div class="profile-card">
+    <div class="profile-image">
+      {% if student.profile_pic %}
+      <img src="{{ student.profile_pic.url }}" alt="Avatar" />
+      {% endif %}
+    </div>
+
+    <div class="profile-info">
+      <h2>{{ student.first_name }} {{ student.last_name }}</h2>
+      <h5 class="email">{{ student.email }}</h5>
+      <h5 class="tel">{{ student.tel }}</h5>
+      <h5 class="dob">{{ student.dob }}</h5>
+      <h5 class="gender">{{ student.get_gender_display }}</h5>
+      <h5 class="country">{{ student.get_country_display }}</h5>
+      <h5 class="message">{{ student.message }}</h5>
+      <a class="edit-btn" href="{% url 'edit_student' student.id %}">
+        Edit Profile
+      </a>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

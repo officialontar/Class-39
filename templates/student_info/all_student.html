@@ -58,7 +58,8 @@
     <td>{{ student.message }}</td>
 
     <td>
-        <a href="{% url 'edit_student' student.id %}">Eidit</a>
+      <a href="{% url 'view_student' student.id %}">View</a>  
+      <a href="{% url 'edit_student' student.id %}">Eidit</a>
         <a href="{% url 'detele_student' student.id %}">Delete</a>
     </td>
   </tr>

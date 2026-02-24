@@ -1,16 +1,18 @@
-# venv
-venv/
+# Virtual Environment
 .venv/
 
-# python cache
+# Python cache
 __pycache__/
 *.pyc
 
-# database
+# Database
 db.sqlite3
 
-# media uploads
+# Media files
 media/
 
-# env
+# VS Code
+.vscode/
+
+# Environment files
 .env

@@ -1,5 +1,6 @@
 from django.shortcuts import get_object_or_404, render, redirect
 from .models import Student
+from django.http import HttpResponse
 
 
 def home(request):
@@ -89,3 +90,9 @@ def edit_student(request, std_id):
     }
 
     return render(request, 'student_info/edit_student.html', context)
+
+
+def view_student(request, std_id):
+    student_data = get_object_or_404(Student, id=std_id)
+    context = {'student': student_data}
+    return render(request, 'student_info/view_student.html', context)
