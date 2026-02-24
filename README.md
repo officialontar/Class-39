@@ -2,122 +2,161 @@
 ![Python](https://img.shields.io/badge/Python-3.x-blue)
 ![Status](https://img.shields.io/badge/Status-Completed-success)
 
-# 🎓 Class-38 Django Student Management System
 
-A complete Django-based Student Management System built during Class-38.  
-This project allows users to add, edit, update, delete, and manage student information with image upload support.
+
+
+# 🎓 Student Management System (Django)
+
+A complete Django-based Student Management System built with full CRUD functionality, admin customization, image upload, filtering, and clean UI design. This project is designed to demonstrate practical Django development skills and proper project structuring.
 
 ---
 
 ## 🚀 Features
 
-- ✅ Add New Student
+- ✅ Add Student
+- ✅ View All Students
+- ✅ Student Profile Card View
 - ✅ Edit Student Information
 - ✅ Delete Student
-- ✅ Upload & Update Profile Picture
-- ✅ Country Selection
-- ✅ Gender Selection
-- ✅ Message Field
-- ✅ Django Admin Panel
-- ✅ Media & Static File Handling
+- ✅ Upload Profile Picture
+- ✅ Gender & Country Choices Formatting
+- ✅ Django Admin Panel Customization
+- ✅ Image Thumbnail Preview in Admin
+- ✅ Filter by Gender & Country
+- ✅ Search Functionality in Admin
+- ✅ Clean UI with Custom Styling
 
 ---
 
 ## 🛠 Tech Stack
 
-- Python 3
-- Django 6.0.2
-- Pillow
-- SQLite3
-- HTML5
-- CSS3
+- Backend: Django
+- Frontend: HTML5, CSS3
+- Database: SQLite3
+- Version Control: Git & GitHub
 
 ---
 
 ## 📂 Project Structure
 
-```
-Class-38/
+core/
 │
-├── core/                 # Django project settings
-├── student_info/         # Main app
-├── templates/            # HTML Templates
-├── static/               # CSS & Static files
-├── media/                # Uploaded Images
 ├── manage.py
 ├── requirements.txt
-└── .gitignore
-```
+├── db.sqlite3
+│
+├── core/
+│   ├── settings.py
+│   ├── urls.py
+│   ├── asgi.py
+│   └── wsgi.py
+│
+├── student_info/
+│   ├── models.py
+│   ├── views.py
+│   ├── admin.py
+│   ├── urls.py
+│   ├── apps.py
+│   └── migrations/
+│
+├── templates/
+│   ├── base.html
+│   └── student_info/
+│       ├── add_student.html
+│       ├── edit_student.html
+│       ├── all_student.html
+│       ├── view_student.html
+│       └── index.html
+│
+├── static/
+│   └── style.css
+│
+└── media/
+    └── students/
 
 ---
 
-## ⚙️ Installation & Setup
+## ⚙️ Installation & Setup Guide
 
 ### 1️⃣ Clone the Repository
 
-```bash
-git clone https://github.com/officialontar/Class-38.git
-cd Class-38/core
-```
+git clone https://github.com/officialontar/Class-39.git  
+cd Class-39/core  
 
-### 2️⃣ Create Virtual Environment (Windows)
+---
 
-```bash
-python -m venv .venv
-.venv\Scripts\activate
-```
+### 2️⃣ Create Virtual Environment
+
+Windows:
+python -m venv .venv  
+.venv\Scripts\activate  
+
+Mac/Linux:
+python3 -m venv .venv  
+source .venv/bin/activate  
+
+---
 
 ### 3️⃣ Install Dependencies
 
-```bash
-pip install -r requirements.txt
-```
-
-### 4️⃣ Run Migrations
-
-```bash
-python manage.py migrate
-```
-
-### 5️⃣ Run Development Server
-
-```bash
-python manage.py runserver
-```
-
-Visit in your browser:
-
-```
-http://127.0.0.1:8000/
-```
+pip install -r requirements.txt  
 
 ---
 
-## 📸 Image Upload Feature
+### 4️⃣ Apply Migrations
 
-This project supports:
-
-- Uploading student profile images
-- Updating images
-- Media file configuration in Django
+python manage.py migrate  
 
 ---
 
-## 🔐 Admin Panel Access
+### 5️⃣ Create Superuser (Optional)
 
-Create superuser:
-
-```bash
-python manage.py createsuperuser
-```
-
-Then visit:
-
-```
-http://127.0.0.1:8000/admin/
-```
+python manage.py createsuperuser  
 
 ---
+
+### 6️⃣ Run Development Server
+
+python manage.py runserver  
+
+Visit:
+http://127.0.0.1:8000/  
+
+Admin Panel:
+http://127.0.0.1:8000/admin/  
+
+---
+
+## 📸 Screenshots
+
+(Add your project screenshots here for better presentation)
+
+---
+
+## ✨ Admin Panel Highlights
+
+- Custom List Display
+- Image Thumbnail Preview
+- Search Functionality
+- Filter by Gender
+- Filter by Country
+- Proper formatted display using Django Choices
+
+---
+
+## 📌 Key Learning Outcomes
+
+- Django Models & ORM
+- Django Admin Customization
+- Template Rendering
+- Image Upload Handling
+- CRUD Operations
+- Clean Project Structure
+- Git & GitHub Workflow
+- UI Styling with CSS
+
+---
+
 
 ## 👤 Author
 
@@ -128,4 +167,9 @@ GitHub: https://github.com/officialontar
 
 ## ⭐ Project Status
 
-✅ Completed (Class-38 Final Version)
+✅ Completed (Class-39 Final Version)
+
+
+📄 License
+
+This project is built for educational and portfolio purposes.
