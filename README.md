@@ -101,11 +101,15 @@ cd Class-39/core
 2️⃣ Create Virtual Environment
 python -m venv .venv
 
+```
+
 Activate:
 
 Windows
 
 .venv\Scripts\activate
+
+```
 
 Mac/Linux
 
@@ -118,6 +122,8 @@ python manage.py migrate
 python manage.py createsuperuser
 6️⃣ Run Server
 python manage.py runserver
+
+```
 
 Visit:
 
@@ -159,47 +165,44 @@ http://127.0.0.1:8000/admin/
 ```
 
 
-✨ Admin Customization Highlights
+---
 
-Custom list display
+## ✨ Admin Panel Highlights
 
-Image thumbnail preview
-
-Search functionality
-
-Filtering by Gender & Country
-
-Proper formatted display using Django choices
-
-📌 Key Learning Outcomes
-
-Django Model & ORM
-
-Django Admin Customization
-
-Template Rendering
-
-Image Upload Handling
-
-CRUD Implementation
-
-Git & GitHub Workflow
-
-Clean UI Structuring
-
-
-## 👤 Author
-
-**MD. ANISUJJAMAN ONTAR**  
-GitHub: https://github.com/officialontar
+- Custom List Display
+- Image Thumbnail Preview
+- Search Functionality
+- Filtering by Gender & Country
+- Proper Formatted Display using Django Choices
 
 ---
 
-## ⭐ Project Status
+## 📌 Key Learning Outcomes
 
-✅ Completed (Class-39 Final Version)
+- Django Models & ORM
+- Django Admin Customization
+- Template Rendering
+- Image Upload Handling
+- CRUD Implementation
+- Git & GitHub Workflow
+- Clean UI Structuring with CSS
 
+---
 
-📄 License
+## 👨‍💻 Author
+
+**MD. ANISUJJAMAN ONTAR**   
+Aspiring Full Stack Developer  
+🔗 GitHub: https://github.com/officialontar  
+
+---
+
+## 🚀 Project Status
+
+🟢 Completed (Class-39 Final Version)
+
+---
+
+## 📄 License
 
 This project is built for educational and portfolio purposes.
