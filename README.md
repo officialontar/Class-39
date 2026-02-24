@@ -2,43 +2,56 @@
 ![Python](https://img.shields.io/badge/Python-3.x-blue)
 ![Status](https://img.shields.io/badge/Status-Completed-success)
 
+# 🎓   Student Management System  (Django)
 
-
-
-# 🎓 Student Management System (Django)
-
-A complete Django-based Student Management System built with full CRUD functionality, admin customization, image upload, filtering, and clean UI design. This project is designed to demonstrate practical Django development skills and proper project structuring.
+A complete Django-based Student Management System built during Class-38.  
+This project allows users to add, edit, update, delete, and manage student information with image upload support.
 
 ---
 
 ## 🚀 Features
 
-- ✅ Add Student
-- ✅ View All Students
-- ✅ Student Profile Card View
+- ✅ Add New Student
 - ✅ Edit Student Information
 - ✅ Delete Student
-- ✅ Upload Profile Picture
-- ✅ Gender & Country Choices Formatting
-- ✅ Django Admin Panel Customization
-- ✅ Image Thumbnail Preview in Admin
-- ✅ Filter by Gender & Country
-- ✅ Search Functionality in Admin
-- ✅ Clean UI with Custom Styling
+- ✅ Upload & Update Profile Picture
+- ✅ Country Selection
+- ✅ Gender Selection
+- ✅ Message Field
+- ✅ Django Admin Panel
+- ✅ Media & Static File Handling
 
 ---
 
 ## 🛠 Tech Stack
 
-- Backend: Django
-- Frontend: HTML5, CSS3
-- Database: SQLite3
-- Version Control: Git & GitHub
+### 🔹 Programming Language
+- Python 3
+
+### 🔹 Backend Framework
+- Django 6.0.2
+
+### 🔹 Image Handling
+- Pillow (for image upload & processing)
+
+### 🔹 Database
+- SQLite3 (Default Django Database)
+
+### 🔹 Frontend
+- HTML5
+- CSS3
+
+### 🔹 Version Control
+- Git
+- GitHub
+
+
 
 ---
 
 ## 📂 Project Structure
 
+```
 core/
 │
 ├── manage.py
@@ -73,89 +86,106 @@ core/
 │
 └── media/
     └── students/
+```
+
+
+## ⚙️ Installation & Setup
 
 ---
 
-## ⚙️ Installation & Setup Guide
+### 1️⃣ Clone Repository
 
-### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/officialontar/Class-39.git
+cd Class-39/core
+2️⃣ Create Virtual Environment
+python -m venv .venv
 
-git clone https://github.com/officialontar/Class-39.git  
-cd Class-39/core  
+Activate:
 
----
+Windows
 
-### 2️⃣ Create Virtual Environment
+.venv\Scripts\activate
 
-Windows:
-python -m venv .venv  
-.venv\Scripts\activate  
+Mac/Linux
 
-Mac/Linux:
-python3 -m venv .venv  
-source .venv/bin/activate  
-
----
-
-### 3️⃣ Install Dependencies
-
-pip install -r requirements.txt  
-
----
-
-### 4️⃣ Apply Migrations
-
-python manage.py migrate  
-
----
-
-### 5️⃣ Create Superuser (Optional)
-
-python manage.py createsuperuser  
-
----
-
-### 6️⃣ Run Development Server
-
-python manage.py runserver  
+source .venv/bin/activate
+3️⃣ Install Dependencies
+pip install -r requirements.txt
+4️⃣ Run Migrations
+python manage.py migrate
+5️⃣ Create Superuser (Optional)
+python manage.py createsuperuser
+6️⃣ Run Server
+python manage.py runserver
 
 Visit:
-http://127.0.0.1:8000/  
+
+http://127.0.0.1:8000/
 
 Admin Panel:
-http://127.0.0.1:8000/admin/  
 
----
+http://127.0.0.1:8000/admin/
+📸 Screenshots
 
-## 📸 Screenshots
+(Add project screenshots here)
 
-(Add your project screenshots here for better presentation)
+```
 
----
 
 ## ✨ Admin Panel Highlights
 
-- Custom List Display
-- Image Thumbnail Preview
-- Search Functionality
-- Filter by Gender
-- Filter by Country
-- Proper formatted display using Django Choices
+- Custom List Display  
+- Image Thumbnail Preview  
+- Search Functionality  
+- Filter by Gender  
+- Filter by Country  
+- Proper Formatted Display using Django Choices  
 
 ---
 
 ## 📌 Key Learning Outcomes
 
-- Django Models & ORM
-- Django Admin Customization
-- Template Rendering
-- Image Upload Handling
-- CRUD Operations
-- Clean Project Structure
-- Git & GitHub Workflow
-- UI Styling with CSS
+- Django Models & ORM  
+- Django Admin Customization  
+- Template Rendering  
+- Image Upload Handling  
+- CRUD Operations  
+- Clean Project Structure  
+- Git & GitHub Workflow  
+- UI Styling with CSS  
 
----
+
+```
+
+
+✨ Admin Customization Highlights
+
+Custom list display
+
+Image thumbnail preview
+
+Search functionality
+
+Filtering by Gender & Country
+
+Proper formatted display using Django choices
+
+📌 Key Learning Outcomes
+
+Django Model & ORM
+
+Django Admin Customization
+
+Template Rendering
+
+Image Upload Handling
+
+CRUD Implementation
+
+Git & GitHub Workflow
+
+Clean UI Structuring
 
 
 ## 👤 Author
