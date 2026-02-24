@@ -89,81 +89,79 @@ core/
 ```
 
 
+
 ## ⚙️ Installation & Setup
 
----
-
-### 1️⃣ Clone Repository
+### 1️⃣ Clone the Repository
 
 ```bash
 git clone https://github.com/officialontar/Class-39.git
 cd Class-39/core
-2️⃣ Create Virtual Environment
-python -m venv .venv
-
 ```
-
-Activate:
-
-Windows
-
-.venv\Scripts\activate
-
-```
-
-Mac/Linux
-
-source .venv/bin/activate
-3️⃣ Install Dependencies
-pip install -r requirements.txt
-4️⃣ Run Migrations
-python manage.py migrate
-5️⃣ Create Superuser (Optional)
-python manage.py createsuperuser
-6️⃣ Run Server
-python manage.py runserver
-
-```
-
-Visit:
-
-http://127.0.0.1:8000/
-
-Admin Panel:
-
-http://127.0.0.1:8000/admin/
-📸 Screenshots
-
-(Add project screenshots here)
-
-```
-
-
-## ✨ Admin Panel Highlights
-
-- Custom List Display  
-- Image Thumbnail Preview  
-- Search Functionality  
-- Filter by Gender  
-- Filter by Country  
-- Proper Formatted Display using Django Choices  
 
 ---
 
-## 📌 Key Learning Outcomes
+### 2️⃣ Create Virtual Environment
 
-- Django Models & ORM  
-- Django Admin Customization  
-- Template Rendering  
-- Image Upload Handling  
-- CRUD Operations  
-- Clean Project Structure  
-- Git & GitHub Workflow  
-- UI Styling with CSS  
-
-
+```bash
+python -m venv .venv
 ```
 
+#### 🔹 Activate (Windows)
+
+```bash
+.venv\Scripts\activate
+```
+
+#### 🔹 Activate (Mac/Linux)
+
+```bash
+source .venv/bin/activate
+```
+
+---
+
+### 3️⃣ Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+### 4️⃣ Run Migrations
+
+```bash
+python manage.py migrate
+```
+
+---
+
+### 5️⃣ Create Superuser (Optional)
+
+```bash
+python manage.py createsuperuser
+```
+
+---
+
+### 6️⃣ Run Development Server
+
+```bash
+python manage.py runserver
+```
+
+Visit in your browser:
+
+```
+http://127.0.0.1:8000/
+```
+
+Admin Panel:
+
+```
+http://127.0.0.1:8000/admin/
+```
 
 ---
 
@@ -189,10 +187,18 @@ http://127.0.0.1:8000/admin/
 
 ---
 
+## 📸 Screenshots
+
+(Add project screenshots here)
+
+
+
 ## 👨‍💻 Author
 
-**MD. ANISUJJAMAN ONTAR**   
-Aspiring Full Stack Developer  
+**MD. ANISUJJAMAN ONTAR** 
+  ```
+## Aspiring Full Stack Developer  
+
 🔗 GitHub: https://github.com/officialontar  
 
 ---
